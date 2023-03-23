@@ -7,7 +7,7 @@ const Store = require('connect-mongodb-session')(session);
 const router = require('./routes/router');
 
 const app = express();
-const MONGO_URI = 'mongodb+srv://parth:P%40rth2005@cluster0.eixcpta.mongodb.net/user?retryWrites=true&w=majority'
+const MONGO_URI = 'mongodb+srv://parth:<password>@cluster0.eixcpta.mongodb.net/user?retryWrites=true&w=majority'
 
 const store = new Store({
     uri: MONGO_URI,
